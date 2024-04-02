@@ -7,7 +7,8 @@ using namespace std;
 void exercise_1(string s1) {
   // TODO: YOUR CODE HERE
 	
-	
+	cout<<"Introducir su linea \n";
+	getline(cin, s1);
 	
 	for(int i=0; i<s1.size();++i ){
 
