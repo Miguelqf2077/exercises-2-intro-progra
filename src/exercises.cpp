@@ -8,10 +8,10 @@ void exercise_1(string s1) {
   // TODO: YOUR CODE HERE
  s1;
 	
-	getline(cin, line);
+	getline(cin, s1);
 	
-	for(int i=0; i<line.size();++i ){
-	if(line[i]==' '){	
+	for(int i=0; i<s1.size();++i ){
+	if(s1[i]==' '){	
 		cout<<i<<endl;
 	}
     }
