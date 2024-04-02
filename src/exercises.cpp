@@ -7,11 +7,11 @@ using namespace std;
 void exercise_1(string s1) {
   // TODO: YOUR CODE HERE
 
-	for(int i=0;i<s1.size();++i ){
+	for(int n=0;n<s1.size();++n ){
 
-	if(s1[i]==' '){	
+	if(s1[n]==' '){	
 
-		cout<<i<<endl;
+		cout<<n<<endl;
 	}
   cout<<s1.size()<<endl;
   }
