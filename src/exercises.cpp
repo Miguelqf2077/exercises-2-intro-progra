@@ -8,7 +8,7 @@ void exercise_1(string s1) {
   // TODO: YOUR CODE HERE
 	
 	cout<<"Introducir su linea"<<endl;
-	getline(cin, s1);
+	getline(s1);
 	
 	for(int i=0; i<s1.size();++i ){
 
