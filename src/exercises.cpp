@@ -6,9 +6,8 @@ using namespace std;
 
 void exercise_1(string s1) {
   // TODO: YOUR CODE HERE
- string s1;
-	cout<<"Introducir su linea"<<endl;
-	getline(cin, s1);
+	
+	getline(s1);
 	
 	for(int i=0; i<s1.size();++i ){
 	if(s1[i]==' '){	
