@@ -12,13 +12,9 @@ string s1;
 	getline(cin, line);
 	
 	for(int i=0; i<line.size();++i ){
-	
-	
-	if(line[i]==' '){
-		
+	if(line[i]==' '){	
 		cout<<i<<endl;
 	}
-	
     }
 }
 
