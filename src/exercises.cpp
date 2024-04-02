@@ -7,14 +7,14 @@ using namespace std;
 void exercise_1(string s1) {
   // TODO: YOUR CODE HERE
 	
-	cout<<"Introducir su linea \n";
+	cout<<"Introducir su linea"<<endl;
 	getline(cin, s1);
 	
 	for(int i=0; i<s1.size();++i ){
 
 	if(s1[i]==' '){	
 
-		cout<<i<<endl;
+		cout<<i<<"\n"<<endl;
 	}
     }
 }
