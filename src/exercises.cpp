@@ -11,7 +11,7 @@ void exercise_1(string s1) {
 
 	if(s1[i]==' '){	
 
-		cout<<i<<endl;
+		
 	}
     }
 }
