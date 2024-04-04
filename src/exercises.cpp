@@ -56,8 +56,10 @@ int pasteles;
             cout << s1 << endl;
             break;
         }
-    }
 
+
+    }
+    cout << s1 << endl;
 
 }
 
