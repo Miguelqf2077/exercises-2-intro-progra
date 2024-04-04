@@ -41,10 +41,10 @@ int pasteles;
         cin >> pasteles;
 
         if (pasteles == 1) {
-             string s1 = "Om-nom-nom :P";
+            s1 = "Om-nom-nom :P";
             cout << s1 << endl;
         } else if (pasteles == 0) {
-             string s1 = "No cake :(";
+            s1 = "No cake :(";
             cout << s1 << endl;
             break;
         }
@@ -52,13 +52,12 @@ int pasteles;
         visitas++;
 
         if (visitas >= 10) {
-             string s1 = "Se ha superado el limite de visitas. ¡Ya no queda mas pastel!";
+            s1 = "Se ha superado el limite de visitas. ¡Ya no queda mas pastel!";
             cout << s1 << endl;
             break;
         }
-
-
     }
+}
    
 }
 
