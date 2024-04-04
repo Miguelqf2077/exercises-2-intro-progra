@@ -34,6 +34,7 @@ int start = 0;
 
 void exercise_3(string s1) {
   // TODO: YOUR CODE HERE
+  {
 int pasteles;
     int visitas = 0;
 
@@ -58,7 +59,7 @@ int pasteles;
         }
     }
 
-   
+  }
 }
 
 void exercise_4(int n) {
