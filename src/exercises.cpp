@@ -46,7 +46,7 @@ int pasteles;
         } else if (pasteles == 0) {
              s1 = "No cake :(";
             cout << s1 << endl;
-            break;
+            
         }
 
         visitas++;
@@ -54,13 +54,11 @@ int pasteles;
         if (visitas >= 10) {
              s1 = "Se ha superado el limite de visitas. ¡Ya no queda mas pastel!";
             cout << s1 << endl;
-            break;
         }
 
 
     }
-    cout << s1 << endl;
-
+   cout << s1 << endl;
 }
 
 void exercise_4(int n) {
