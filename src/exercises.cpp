@@ -58,7 +58,7 @@ int pasteles;
 
 
     }
-   cout << s1 << endl;
+   
 }
 
 void exercise_4(int n) {
