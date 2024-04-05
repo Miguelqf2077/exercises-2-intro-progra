@@ -57,7 +57,7 @@ void exercise_3(string s1) {
             break;
         }
     }
-    cout << s1 << endl;
+  
 }
 
 void exercise_4(int n) {
