@@ -38,8 +38,6 @@ void exercise_3(string s1) {
     int visitas = 0;
 	
 	while(true){
-	    
-        cin >> s1;
 	
 	if(s1==1){
       cout << "Om-nom-nom :P" << endl;
