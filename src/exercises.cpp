@@ -38,7 +38,7 @@ void exercise_3(string s1) {
     int visitas = 0;
 
     while (true) {
-        cout << "Ingrese el numero de pasteles (1 para comer, 0 para salir): ";
+        cout << "Ingrese el numero de pasteles 1 para comer, 0 para salir: ";
         cin >> pasteles;
 
         if (pasteles == 1) {
@@ -57,6 +57,7 @@ void exercise_3(string s1) {
             cout << s1 << endl;
             break;
         }
+        cout << s1 << endl;
     }
 }
 
