@@ -38,23 +38,26 @@ void exercise_3(string s1) {
     int visitas = 0;
 
     while (true) {
-        cout << "Ingrese 1 si hay pastel, 0 si no hay pastel: ";
         cin >> pasteles;
 
         if (pasteles == 1) {
-            cout << "Om-nom-nom :P" << endl;
+            s1 = "Om-nom-nom :P";
+            cout << s1 << endl;
         } else if (pasteles == 0) {
-            cout << "No cake :(" << endl;
+            s1 = "No cake :(";
+            cout << s1 << endl;
             break;
         }
 
         visitas++;
 
         if (visitas >= 10) {
-            cout << "Se ha superado el limite de visitas. ¡Ya no queda mas pastel!" << endl;
+            s1 = "Se ha superado el limite de visitas. ¡Ya no queda mas pastel!";
+            cout << s1 << endl;
             break;
         }
     }
+    cout << s1 << endl;
 }
 
 void exercise_4(int n) {
