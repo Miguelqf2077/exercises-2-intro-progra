@@ -34,16 +34,16 @@ int start = 0;
 
 void exercise_3(string s1) {
   // TODO: YOUR CODE HERE
-  int pasteles;
+  s1;
     int visitas = 0;
 
     while (true) {
-        cin >> pasteles;
+        
 
-        if (pasteles == 1) {
+        if (s1 == 1) {
             s1 = "Om-nom-nom :P";
             cout << s1 << endl;
-        } else if (pasteles == 0) {
+        } else if (s1 == 0) {
             s1 = "No cake :(";
             cout << s1 << endl;
             break;
