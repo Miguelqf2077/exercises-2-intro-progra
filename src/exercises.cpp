@@ -40,9 +40,9 @@ void exercise_3(string s1) {
 	while(true){
 	
 	if(s1>="1"){
-      cout << "Om-nom-nom :P" << endl;
+      cout << "Om-nom-nom :P\n";
       } else if(s1>="0"){
-      cout << "No cake :(" << endl;
+      cout << "No cake :(\n";
       break;
      }
     
