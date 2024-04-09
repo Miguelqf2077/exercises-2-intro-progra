@@ -52,9 +52,6 @@ void exercise_3(string s1) {
             cout << "Se ha superado el limite de visitas. ¡Ya no queda más pastel!" << endl;
             break;
         }
-    
-    }
-
    
 }
 
