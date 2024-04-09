@@ -46,7 +46,7 @@ void exercise_3(string s1) {
         
         visitas++;
         
-        if (visitas >= 10) {
+        if (visitas >= "9") {
             cout << "Se ha superado el límite de visitas. ¡Ya no queda más pastel!" << endl;
             break;
         }
