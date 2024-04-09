@@ -35,25 +35,21 @@ int start = 0;
 void exercise_3(string s1) {
   // TODO: YOUR CODE HERE
      s1;
-    string visitas = '0';
+   char visitas = '0'; 
 
-	while(true){
-	    
-	
-	if(s1=="1"){
-      cout << "Om-nom-nom :P" << endl;
-      } else if(s1=="0"){
-      cout << "No cake :(" << endl;
-      break;
-     }
-    
-    visitas++;
-    
-    if (visitas >= "9") {
+    while(true) {
+        if(s1 == "1") {
+            cout << "Om-nom-nom :P" << endl;
+        } else if(s1 == "0") {
+            cout << "No cake :(" << endl;
+            break;
+        }
+
+        visitas++;
+        if (visitas > '9') { /
             cout << "Se ha superado el limite de visitas. ¡Ya no queda mas pastel!" << endl;
             break;
         }
-    
     }
    
 }
