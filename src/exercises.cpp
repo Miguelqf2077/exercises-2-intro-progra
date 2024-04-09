@@ -35,7 +35,7 @@ int start = 0;
 void exercise_3(string s1) {
   // TODO: YOUR CODE HERE
      s1;
-    int visitas = 0;
+    string visitas = '0';
 
 	while(true){
 	    
@@ -49,7 +49,7 @@ void exercise_3(string s1) {
     
     visitas++;
     
-    if (visitas >= 10) {
+    if (visitas >= "9") {
             cout << "Se ha superado el limite de visitas. ¡Ya no queda mas pastel!" << endl;
             break;
         }
