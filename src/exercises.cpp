@@ -43,6 +43,11 @@ cout<<"Om-nom-nom :P\n";
 
 }
 
+if(s1.size>19)
+{
+break;
+
+}
 else if(s1[n]==0)
 {
 
