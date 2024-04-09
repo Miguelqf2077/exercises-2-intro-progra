@@ -34,23 +34,35 @@ int start = 0;
 
 void exercise_3(string s1) {
   // TODO: YOUR CODE HERE
-  char visitas = 0;
+  int visitas = 0;
+    size_t pos = 0;
 
     while (true) {
-        if (s1 >= "1") {
-            cout << "Om-nom-nom :P\n" << endl;
-        } else if (s1 >= "0") {
-            cout << "No cake :(\n" << endl;
+        pos = s1.find(" ");
+        string token = s1.substr(0, pos);
+        s1.erase(0, pos + 1); 
+
+        if (token == "1") {
+            cout << "Om-nom-nom :P" << endl;
+        } else if (token == "0") {
+            cout << "No hay pastel :(" << endl;
+            break;
+        } else {
+            cout << "Entrada inválida. Debe ser '0' o '1'." << endl;
             break;
         }
-        
+
         visitas++;
-        
+
         if (visitas >= 10) {
             cout << "Se ha superado el límite de visitas. ¡Ya no queda más pastel!" << endl;
             break;
         }
+
+        if (pos == string::npos) 
+            break;
     }
+
    
 }
 
