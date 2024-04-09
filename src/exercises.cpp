@@ -41,22 +41,29 @@ if(s1[n]=='1')
 
 cout<<"Om-nom-nom :P\n";
 
+
 }
 
 if(s1.size()>19)
 {
+	
+	cout<<"Om-nom-nom :P\nOm-nom-nom :P\nOm-nom-nom :P\nOm-nom-nom :P\nOm-nom-nom :P\nOm-nom-nom :P\nOm-nom-nom :P\nOm-nom-nom :P\nOm-nom-nom :P\n";
 break;
 
 }
-else if(s1[n]==0)
+
+
+ if(s1[n]=='0')
 {
 
 cout<<"No cake :(\n";
+
+
 break;
 
-}
-}
 
+}
+}
    
 }
 
