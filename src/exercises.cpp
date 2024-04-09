@@ -34,28 +34,27 @@ int start = 0;
 
 void exercise_3(string s1) {
   // TODO: YOUR CODE HERE
-       s1;
+     s1;
     int visitas = 0;
-    
-    while (true) {
-        cout << "¿Hay pastel? (Ingresa '1' para Si, '0' para No): ";
+
+	while(true){
+	    
         cin >> s1;
-        
-        if (s1 == "1") {
-            cout << "Om-nom-nom :P" << endl;
-        } else if (s1 == "0") {
-            cout << "No hay pastel :(" << endl;
-            break;
-        } else {
-            cout << "Entrada invalida. Ingresa solo '1' o '0'." << endl;
-        }
-        
-        visitas++;
-        
-        if (visitas >= 10) {
+	
+	if(s1=="1"){
+      cout << "Om-nom-nom :P" << endl;
+      } else if(s1=="0"){
+      cout << "No cake :(" << endl;
+      break;
+     }
+    
+    visitas++;
+    
+    if (visitas >= 10) {
             cout << "Se ha superado el limite de visitas. ¡Ya no queda mas pastel!" << endl;
             break;
         }
+    
     }
    
 }
