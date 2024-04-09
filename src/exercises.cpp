@@ -34,26 +34,24 @@ int start = 0;
 
 void exercise_3(string s1) {
   // TODO: YOUR CODE HERE
-  s1;
-    char visitas = 0;
-	
-	while(true){
-	
-	if(s1>="1"){
-      cout << "\nOm-nom-nom :P";
-      } else if(s1>="0"){
-      cout << "\nNo cake :(";
-      break;
-     }
-    
-    visitas++;
-    
-    if (visitas >= 10) {
-            cout << "Se ha superado el limite de visitas. ¡Ya no queda mas pastel!" << endl;
-            break;
-        }
-    
-    }
+for(int n=0;s1.size()>n;n++)
+{
+if(s1[n]=='1')
+{
+
+cout<<"Om-nom-nom :P\n";
+
+}
+
+else if(s1[n]==0)
+{
+
+cout<<"No cake :(\n";
+break;
+
+}
+}
+
    
 }
 
