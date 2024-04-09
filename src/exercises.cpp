@@ -35,7 +35,7 @@ int start = 0;
 void exercise_3(string s1) {
   // TODO: YOUR CODE HERE
   
-    int visitas = 0;
+    char visitas = 0;
 	
 	while(true);
 	
