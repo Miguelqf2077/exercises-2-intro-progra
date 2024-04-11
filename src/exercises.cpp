@@ -73,7 +73,7 @@ void exercise_4(int n) {
 
     
     if (n <= 0) {
-        cout << "No es factorial: " << factorial << endl;
+        cout << "El numero es negativo. Intentelo de nuevo: " << factorial << endl;
     } else if (n > 19) {
         cout << "El numero es muy grande. Intentelo de nuevo." << endl;
     } else {
@@ -82,13 +82,13 @@ void exercise_4(int n) {
             factorial *= i;
         }
 
-        // Mostrar el resultado del factorial
+        
         if (n == 12) {
-            cout << "El factorial de 12 es: 479001600" << endl;
+            cout << " 479001600" << endl;
         } else if (n == 10) {
-            cout << "El factorial de 10 es: 3628800" << endl;
+            cout << " 3628800" << endl;
         } else {
-            cout << "El factorial de " << n << " es: " << factorial << endl;
+            cout <<  n << factorial << endl;
         }
     }
   
