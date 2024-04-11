@@ -69,7 +69,12 @@ break;
 
 void exercise_4(int n) {
   // TODO: YOUR CODE HERE
-    
+    if (n == 0 || n== 1) {
+        return 1;
+    } else {
+        return n * calcularFactorial(n - 1);
+    }
+
     if (n >= 0) {
         
         double factorial = calcularFactorial(n);
