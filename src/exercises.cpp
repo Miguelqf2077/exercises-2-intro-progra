@@ -70,18 +70,31 @@ break;
 void exercise_4(int n) {
   // TODO: YOUR CODE HERE
     
-	double factorial;
+    if (n >= 0) {
+        
+        double factorial = calcularFactorial(n);
 
-	factorial = 1;
-	if(n>0){
-	for(int i=1;i<=n;i++)
-	  
-	  factorial= i* factorial;
-	  
-	  cout<<"El factorial es " <<factorial<<"\n";
-    }else{
-    	cout<<" No es factorial "<<factorial<<"\n";
-	}
+        cout << "El factorial es " << factorial << endl;
+
+        if (n > 0) {
+            cout << "Desglose del factorial: ";
+            int temp = n;
+            bool primerFactor = true;
+            for (int divisor = 2; divisor <= temp; divisor++) {
+                while (temp % divisor == 0) {
+                    if (!primerFactor) {
+                        cout << " x ";
+                    }
+                    cout << divisor;
+                    temp /= divisor;
+                    primerFactor = false;
+                }
+            }
+            cout << endl;
+        }
+    } else {
+        cout << "No es posible calcular el factorial de un número negativo." << endl;
+    }
 
 
   
