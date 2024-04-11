@@ -106,9 +106,9 @@ void exercise_5(int n, int k) {
 
   
     for (int i = n; i <= 7; ++i) {
-        if (current_day < 10) cout << "    ";
-        if (current_day > k) cout << "- ";
-        else cout << current_day << " ";
+        if (current_day < 10) cout<<" ";
+        if (current_day > k) cout<< "- ";
+        else cout << current_day<< " ";
         if (current_day == k) break;
         current_day++;
     }
