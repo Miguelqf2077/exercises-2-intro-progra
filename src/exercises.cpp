@@ -69,41 +69,23 @@ break;
 
 void exercise_4(int n) {
   // TODO: YOUR CODE HERE
-   double factorial;
+   double factorial = 1;
 
-    factorial = 1;
-
-    
-    if (n > 0) {
+    if (n <= 0) {
+        cout << "El numero es negativo. Intentelo de nuevo: " << factorial << endl;
+    } else if (n > 19) {
+        cout << "El numero es muy grande. Intentelo de nuevo." << endl;
+    } else {
         
         cout << "Calculando factorial..." << endl;
         for (int i = 1; i <= n; i++) {
-            factorial = i * factorial; 
+            factorial *= i;
         }
 
         
-        cout << "El factorial de " << n << " es " << factorial << endl;
+        cout << "El factorial es " << factorial << endl;
 
-        
-        cout << "Desglose del factorial: " << n << "! = ";
-        bool primerFactor = true;
-        int temp = n;
-        for (int divisor = 2; divisor <= temp; divisor++) {
-            while (temp % divisor == 0) {
-                if (!primerFactor) {
-                    cout << " x ";
-                }
-                cout << divisor;
-                temp /= divisor;
-                primerFactor = false;
-            }
-        }
         cout << endl;
-
-    } else {
-        
-        cout << "No es posible calcular el factorial de un número no positivo." << endl;
-        cout << "No es factorial: " << factorial << endl;
     }
 
   
