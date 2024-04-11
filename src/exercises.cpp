@@ -74,9 +74,9 @@ void exercise_4(int n) {
     if (n == 0) {
         cout << "1" << endl;
     } else if (n <= 0) {
-        cout << "El numero es negativo. Intentelo de nuevo\n" << endl;
+        cout << "El numero es negativo. Intentelo de nuevo" << endl;
     } else if (n > 19) {
-        cout << "El numero es muy grande. Intentelo de nuevo\n" << endl;
+        cout << "El numero es muy grande. Intentelo de nuevo" << endl;
     } else {
         
         for (int i = 1; i <= n; i++) {
