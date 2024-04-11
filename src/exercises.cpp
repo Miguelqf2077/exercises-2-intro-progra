@@ -69,6 +69,22 @@ break;
 
 void exercise_4(int n) {
   // TODO: YOUR CODE HERE
+    
+	double factorial;
+
+	factorial = 1;
+	if(n>0){
+	for(int i=1;i<=n;i++)
+	  
+	  factorial= i* factorial;
+	  
+	  cout<<"El factorial es " <<factorial<<"\n";
+    }else{
+    	cout<<" No es factorial "<<factorial<<"\n";
+	}
+
+
+  
 }
 
 void exercise_5(int n, int k) {
