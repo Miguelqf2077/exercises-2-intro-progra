@@ -114,7 +114,7 @@ void exercise_5(int n, int k) {
     }
 
   
-    while (current_day < k) {
+    while (current_day < k) { 
         cout << endl;
         for (int i = 1; i <= 7; ++i) {
             if (current_day > k) cout << "- ";
