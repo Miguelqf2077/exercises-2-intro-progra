@@ -99,30 +99,38 @@ void exercise_5(int n, int k) {
   // TODO: YOUR CODE HERE
   int current_day = 1;
 
-    
-    for (int i = 1; i < n; ++i) {
-        cout << "   ";
-    }
-
-  
-    for (int i = n; i <= 7; ++i) {
-        if (current_day < 10) cout<<" ";
-        if (current_day > k) cout<< "- ";
-        else cout << current_day<< " ";
-        if (current_day == k) break;
-        current_day++;
-    }
-
-  
-    while (current_day < k) { 
-        cout << endl;
-        for (int i = 1; i <= 7; ++i) {
-            if (current_day > k) cout << "- ";
-            else cout << (current_day < 10 ? " " : "") << current_day << " ";
-            if (current_day == k) break;
-            current_day++;
+    for (int day = 1; day <= 31; ++day) {
+        if (current_day == 1) {
+           
+            for (int i = 1; i < n; ++i) {
+               cout << "   ";
+            }
         }
+
+        if (current_day < 10) {
+            cout << " ";
+        }
+
+        if (current_day > k) {
+            cout << "- "; 
+        } else {
+            cout << current_day << " ";
+        }
+
+        
+        if (current_day % 7 == (8 - n) % 7) {
+            
+            cout << std::endl;
+        }
+
+        if (current_day == k) {
+            break; 
+        }
+
+        ++current_day;
     }
+
+    cout << endl;
 
 }
 
