@@ -104,10 +104,10 @@ void exercise_5(int n, int k) {
     
     while (dia_actual <= k) {
         if (dia_actual < 10) {
-            cout<<" "; 
+            cout<< " "; 
         }
 
-        cout<<dia_actual<<" "; 
+        cout<<dia_actual<< " "; 
 
         if ((dia_actual - 1) % 7 == 0) {
             cout<<endl; 
