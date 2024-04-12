@@ -97,37 +97,49 @@ void exercise_4(int n) {
 
 void exercise_5(int n, int k) {
   // TODO: YOUR CODE HERE
-  int current_day = 1;
-
-   
-    for (int day = 1; day <= 31; ++day) {
+  if (n < 1 || n > 7) {
         
-        if (current_day % 7 == 1) {
+        return 1; 
+    }
+
+     
+    
+    if (k < -1 || k > 31) {
+        cout << "Dia del mes no valido. Debe estar entre -1 y 31." << endl;
+        return 1; 
+    }
+
+    int current_day = 1;
+
+    for (int day = 1; day <= 31; ++day) {
+        if (current_day == 1) {
             
-            if (current_day > 1) {
-                cout << endl;
+            for (int i = 1; i < n; ++i) {
+                cout << "   ";
             }
         }
 
-        
         if (current_day < 10) {
             cout << " ";
         }
 
-       
-        if (current_day > k) {
-            cout << "- ";
+        if (current_day == k) {
+            cout << "- "; 
         } else {
-            cout << current_day << " ";
+            cout << current_day << " "; 
         }
-
-       
-        ++current_day;
 
         
-        if (current_day > k) {
+        if (current_day % n == 0) {
+            cout << endl;
+        }
+
+        
+        if (current_day == k) {
             break;
         }
+
+        ++current_day;
     }
 
     cout << endl;
