@@ -97,7 +97,7 @@ void exercise_4(int n) {
 
 void exercise_5(int n, int k) {
   // TODO: YOUR CODE HERE
-  cout << "                  " << 1 << endl;
+  cout << "                " << 1 << endl;
     
     int dia_actual = 2;
 
