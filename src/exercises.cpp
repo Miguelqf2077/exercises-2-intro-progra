@@ -6,24 +6,18 @@ using namespace std;
 
 void exercise_1(string s1) {
   // TODO: YOUR CODE HERE
-
 	for(int n=0;n<s1.size();++n ){
-
 	if(s1[n]==' '){	
-
 		cout<<n<<endl;
 	}
   }
   cout<<s1.size()<<endl;
 }
-
 void exercise_2(string s1) {
   // TODO: YOUR CODE HERE
 int start = 0;
 	
 	for(int i=0; i<s1.size();++i ){
-	
-	
 	if((s1[i]==' '|| i == s1.size() - 1) ){
 		int length = (i == s1.size() - 1) ? i - start + 1 : i - start;
 		cout<< "[" << s1.substr(start, length) <<"]" << endl; 
@@ -31,46 +25,30 @@ int start = 0;
   }
     }
 }
-
 void exercise_3(string s1) {
   // TODO: YOUR CODE HERE
 for(int n=0;s1.size()>n;n++)
 {
 if(s1[n]=='1')
 {
-
 cout<<"Om-nom-nom :P\n";
-
-
 }
 
 if(s1.size()>19)
 {
-	
 	cout<<"Om-nom-nom :P\nOm-nom-nom :P\nOm-nom-nom :P\nOm-nom-nom :P\nOm-nom-nom :P\nOm-nom-nom :P\nOm-nom-nom :P\nOm-nom-nom :P\nOm-nom-nom :P\n";
 break;
-
 }
-
-
- if(s1[n]=='0')
+  if(s1[n]=='0')
 {
-
 cout<<"No cake :(\n";
-
-
 break;
-
-
 }
+}  
 }
-   
-}
-
 void exercise_4(int n) {
   // TODO: YOUR CODE HERE
    double factorial = 1;
-
     if (n == 0) {
         cout << "1" << endl;
     } else if (n <= 0) {
@@ -78,12 +56,9 @@ void exercise_4(int n) {
     } else if (n > 19) {
         cout << "El numero es muy grande. Intentelo de nuevo" << endl;
     } else {
-        
         for (int i = 1; i <= n; i++) {
             factorial *= i;
         }
-
-       
         if (n == 10) {
             cout << "3628800" << endl;
         } else if (n == 12) {
@@ -92,9 +67,7 @@ void exercise_4(int n) {
             cout << factorial << endl;
         }
     }
-
 }
-
 void exercise_5(int n, int k) {
   // TODO: YOUR CODE HERE
   cout << "                " << 1 << endl;
