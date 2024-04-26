@@ -70,18 +70,42 @@ void exercise_4(int n) {
 }
 void exercise_5(int n, int k) {
   // TODO: YOUR CODE HERE
-    cout << "                   " << 1 << endl;
-    
-    int dia_actual = 2;
+    switch(n){
+        case 1:
+        cout<<" ";
+        break;
+        case 2:
+        cout<<"   ";
+        break;
+        case 3:
+        cout<<"     ";
+        break;
+        case 4:
+        cout<<"       ";
+        break;
+        case 5:
+        cout<<"         ";
+        break;
+        case 6:
+        cout<<"           ";
+        break;
+        case 7:
+        cout<<"             ";
+        break;
+        default:
+         cout<< "error de numero"; 
+        break;
+    }
+         int dia_actual = 1;
 
     
     while (dia_actual <= k) {
         if (dia_actual < 10) {
-            cout << " "; 
+            cout <<  " "; 
         }
-
-        cout << dia_actual << " "; 
-
+ 
+         cout << dia_actual << " "; 
+         
         if ((dia_actual - 1) % 7 == 0) {
             cout << endl; 
         }
