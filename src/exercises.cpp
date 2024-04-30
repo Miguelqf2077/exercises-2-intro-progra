@@ -70,30 +70,36 @@ void exercise_4(int n) {
 }
 void exercise_5(int n, int k) {
   // TODO: YOUR CODE HERE
-   if (n < 1 || n > 7) {
-        cout << "El numero de espacios debe estar entre 1 y 7." << endl;
-        return 1; 
-    }
-    if (k < 1 || k > 31) {
-        cout << "El numero de días debe estar entre 1 y 31." << endl;
-        return 1; 
-    }
-    cout << "  Lun Mar Mie Jue Vie Sab Dom" << endl;
-    cout << string(3 * (n - 1), ' '); 
-    int dia_actual = 1;
-    int dia_semana = n; 
-    while (dia_actual <= k) { 
-        if (dia_actual < 10) {
-            cout << " ";
+  
+    if (n < 1 || n > 7 || k < 1 || k > 31) {
+        if (n < 1 || n > 7) {
+            cout << "El numero de espacios debe estar entre 1 y 7." << endl;
         }
-        cout << dia_actual << " ";
-        dia_semana++;
-        if (dia_semana > 7) {
-            dia_semana = 1; 
-            cout << endl; 
+        if (k < 1 || k > 31) {
+            cout << "El numero de días debe estar entre 1 y 31." << endl;
         }
-        dia_actual++; 
-    }     
+    } else {
+        cout << "  Lun Mar Mie Jue Vie Sab Dom" << endl;
+        cout << string(3 * (n - 1), ' '); 
+
+        int dia_actual = 1;
+        int dia_semana = n; 
+
+        while (dia_actual <= k) {
+            if (dia_actual < 10) {
+                cout << " ";
+            }
+            cout << dia_actual << " ";
+
+            dia_semana++;
+            if (dia_semana > 7) {
+                dia_semana = 1; 
+                cout << endl; 
+            }
+            dia_actual++; 
+        }
+        cout << endl; 
+    }
 }
 
 int exercise_6(int n) {
