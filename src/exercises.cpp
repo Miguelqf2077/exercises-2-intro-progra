@@ -126,16 +126,22 @@ int exercise_6(int n) {
   // TODO: YOUR CODE HERE
   n;
  int suma = 0;
+
     if (n < 0) {
+
         cout << "0" << endl;
+
     } else {
+
         while (n != 0) {
+
             suma += n % 10;
+            
             n /= 10;
         }
         cout<<"actual: "<< suma << endl;
     }
-  return 0;  
+
 }
 
 void exercise_7(int n) {
