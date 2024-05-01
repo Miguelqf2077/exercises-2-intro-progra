@@ -126,13 +126,14 @@ int exercise_6(int n) {
   // TODO: YOUR CODE HERE
   int suma = 0;
     if (n < 0) {
-        cout << "0" <<endl;  
+        cout << "0" << endl;
+       return 0;
     }
     while (n != 0) {
         suma += n % 10;
         n /= 10;
     }
-    cout << "La suma de los digitos es: " << suma <<endl;
+    cout << "La suma de los digitos de  es: " << suma << endl;
   return 0;
 }
 
