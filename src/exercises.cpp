@@ -70,50 +70,56 @@ void exercise_4(int n) {
 }
 void exercise_5(int n, int k) {
   // TODO: YOUR CODE HERE
-  switch (n) {
-        case 1:
-            cout << " ";
-            break;
-        case 2:
-            cout << "   ";
-            break;
-        case 3:
-            cout << "     ";
-            break;
-        case 4:
-            cout << "       ";
-            break;
-        case 5:
-            cout << "         ";
-            break;
-        case 6:
-            cout << "           ";
-            break;
-        case 7:
-            cout << "             ";
-            break;
-        default:
-            cout << "Error: numero de espacios invalido" << endl;
-            
-    }
-    
-    int dia_actual = 1;
-
-    while (dia_actual <= k) {
-        if (dia_actual < 10) {
-            cout << " "; 
-        }
-        
-        cout << dia_actual << " "; 
-        
-        if (dia_actual % 7 == 0) {
-            cout << endl; 
-        }
-
-        dia_actual++; 
-    }
-    
-    cout << endl;
+  int resp=-n+2;
+while(n==n)
+{
+	
+	for(int line=0;line<7 ;line++)
+	{
+		if (n>1 && resp<=0)
+		{
+			
+			cout<<"   ";
+		}
+		else if(line==6)
+		{
+			if(resp>=1 && resp<10)
+			{
+				cout<<" "<<resp;
+			}
+			else
+			{
+				cout<<resp;
+			}
+		}
+		
+	    else if(resp>=1 && resp<10)
+		{
+			cout<<" "<<resp<<" ";
+		}
+		else
+		{
+		cout<<resp<<" ";	
+		}
+		
+	
+		n--;
+	resp++;
+	
+	if(resp>k)
+{
+	break;
+}	
+		
+	}
+	
+	cout<<"\n";
+	
+if(resp>k)
+{
+	break;
+}
+}
 }
 
 int exercise_6(int n) {
