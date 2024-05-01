@@ -136,12 +136,12 @@ int exercise_6(int n) {
         while (n != 0) {
 
             suma += n % 10;
-            
+
             n /= 10;
         }
-        cout<<"actual: "<< suma << endl;
+        cout<< suma << endl;
     }
-
+   return 0;
 }
 
 void exercise_7(int n) {
