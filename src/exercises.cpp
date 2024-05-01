@@ -124,6 +124,15 @@ if(resp>k)
 
 int exercise_6(int n) {
   // TODO: YOUR CODE HERE
+  int suma = 0;
+    if (n < 0) {
+        cout << "0" <<endl;  
+    }
+    while (n != 0) {
+        suma += n % 10;
+        n /= 10;
+    }
+    cout << "La suma de los digitos es: " << suma <<endl;
   return 0;
 }
 
