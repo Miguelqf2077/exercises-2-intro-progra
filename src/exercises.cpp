@@ -134,7 +134,6 @@ int exercise_6(int n) {
         }
         cout<< suma << endl;
     }
-  return 0;
 }
 
 void exercise_7(int n) {
