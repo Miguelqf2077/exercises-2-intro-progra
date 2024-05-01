@@ -133,7 +133,7 @@ int exercise_6(int n) {
         suma += n % 10;
         n /= 10;
     }
-    cout << "La suma de los digitos de  es: " << suma << endl;
+    cout<< suma << endl;
   return 0;
 }
 
