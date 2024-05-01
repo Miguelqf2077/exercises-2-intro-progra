@@ -124,16 +124,16 @@ if(resp>k)
 
 int exercise_6(int n) {
   // TODO: YOUR CODE HERE
-  int suma = 0;
+ int suma = 0;
     if (n < 0) {
         cout << "0" << endl;
-       return 0;
+    } else {
+        while (n != 0) {
+            suma += n % 10;
+            n /= 10;
+        }
+        cout<< suma << endl;
     }
-    while (n != 0) {
-        suma += n % 10;
-        n /= 10;
-    }
-    cout<< suma << endl;
   return 0;
 }
 
