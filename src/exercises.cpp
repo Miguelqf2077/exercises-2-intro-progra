@@ -124,6 +124,7 @@ if(resp>k)
 
 int exercise_6(int n) {
   // TODO: YOUR CODE HERE
+  n;
  int suma = 0;
     if (n < 0) {
         cout << "0" << endl;
@@ -132,7 +133,7 @@ int exercise_6(int n) {
             suma += n % 10;
             n /= 10;
         }
-        cout<<suma<< endl;
+        cout<<"actual: "<< suma << endl;
     }
   return 0;  
 }
